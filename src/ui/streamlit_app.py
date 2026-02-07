@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import os
 
 st.set_page_config(page_title="Lloyd Bank Risk Portal", layout="centered")
 
@@ -104,3 +105,4 @@ if submit:
     except Exception as e:
 
         st.error(f"❌ Connection Failed: {e}")
+

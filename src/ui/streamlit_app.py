@@ -7,7 +7,8 @@ st.title("🏦 Lloyd Bank Loan Assessment")
 st.info("This UI communicates with the FastAPI Production Model.")
 
 # FastAPI Endpoint URL (Adjust if running in Docker/Cloud)
-API_URL = "http://fastapi-backend:8000/predict"
+RENDER_URL = "https://lloyd-bank-loan-fraud-detection.onrender.com/predict"
+API_URL = os.environ.get("API_URL", RENDER_URL)
 
 
 # --- Reset Function ---
@@ -101,4 +102,5 @@ if submit:
         else:
             st.warning(f"⚠️ API Error: {response.text}")
     except Exception as e:
+
         st.error(f"❌ Connection Failed: {e}")

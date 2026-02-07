@@ -33,8 +33,4 @@ By separating the **FastAPI Backend** (the "Brain") from the **Streamlit Fronten
 * **Containerized Environment:** Fully Dockerized for "works on my machine" consistency across development and production.
 
 
-# 🏦 Lloyd Bank Loan Assessment Portal
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://YOUR-APP-NAME.streamlit.app)
-
-> **Live Demo:** [Click here to try the Assessment Portal](https://YOUR-APP-NAME.streamlit.app)
